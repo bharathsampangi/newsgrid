@@ -6,7 +6,7 @@ export default function Header() {
         <header>
             <nav className="header__nav row">
                 <img className="logo" alt="Logo Dark" src={LogoDark} />
-                <div>
+                <div className="header__nav-links">
                     <a className="header__nav-link" href="http://facebook.com" target="_blank" rel="noreferrer">
                         <i class="fab fa-facebook fa-2x"></i>
                     </a>
