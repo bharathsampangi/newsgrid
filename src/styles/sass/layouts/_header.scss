@@ -10,6 +10,22 @@
         padding: 2rem 0 1rem;
         align-items: center;
 
+        @include respond(tab-port) {
+            grid-template-columns: 1fr;
+            
+            .logo, &-list {
+                justify-self: center;
+                margin-bottom: .25rem;
+            }
+
+        }
+
+        &-links {
+            @include respond(tab-port) {
+                display: none;
+            }
+        }
+
         &-link {
             text-decoration: none;
             color: #777;
