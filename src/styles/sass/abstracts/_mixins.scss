@@ -1,0 +1,37 @@
+@mixin label {
+    padding: .5rem .75rem;
+    border-radius: 100px;
+    text-transform: uppercase;
+    font-size: .55rem;
+    color: $light-color;
+    display: inline-block;
+    margin-top: .5rem;
+}
+
+@mixin respond($break-point) {
+    @if $break-point == tab-land {
+        @media only screen and (max-width: 1200px) {
+            @content
+        };
+    }
+    @if $break-point == tab-port {
+        @media only screen and (max-width: 900px) {
+            @content
+        };
+    }
+    @if $break-point == phone {
+        @media only screen and (max-width: 600px) {
+            @content
+        };
+    }
+    @if $break-point == big-desktop {
+        @media only screen and (min-width: 1800px) {
+            @content
+        };
+    }
+    @if $break-point == min-tab-land {
+        @media only screen and (min-width: 1200px){
+            @content
+        };
+    }
+}

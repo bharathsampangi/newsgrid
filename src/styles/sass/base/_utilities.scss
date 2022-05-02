@@ -2,3 +2,18 @@
     max-width: 1200px;
     margin:0 auto;
 }
+
+.sports {
+    background-color: $sports-color;
+    @include label;
+}
+
+.entertainment {
+    background-color: $ent-color;
+    @include label;
+}
+
+.tech {
+    background-color: $tech-color;
+    @include label;
+}

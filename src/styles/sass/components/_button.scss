@@ -1,0 +1,10 @@
+.btn {
+    padding: .75rem 1.5rem;
+    cursor: pointer;
+    color: $light-color;
+}
+
+.btn-primary {
+    background-color: $primary-color;
+    border: 1px solid $primary-color;
+}

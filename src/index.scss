@@ -1,4 +1,7 @@
 @import "./styles/sass/base/variables";
+@import "./styles/sass/abstracts/mixins";
 @import "./styles/sass/base/reset";
 @import "./styles/sass/base/utilities";
+@import "./styles/sass/components/button";
 @import "./styles/sass/layouts/header";
+@import "./styles/sass/components/articles";
